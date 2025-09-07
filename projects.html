@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+    /* Page background */
+    body {
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #fef9c3);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Section heading */
+    #projects {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+    #projects h2 {
+      text-align: center;
+      font-size: 2.0rem;
+      margin-bottom: 2rem;
+      color: #1e3a8a;
+      position: relative;
+    }
+    #projects h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #06b6d4, #4f46e5);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Card layout */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    /* Project cards */
+    #projects .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 6px solid transparent;
+    }
+    #projects .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+      border-left: 6px solid #4f46e5;
+    }
+    #projects .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    #projects .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Lekha<span>.</span></h1>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html"class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🗺️ Voice-based UI for Geospatial Maps</h3>
+        <p>Contributed to developing a system that allows users to interact with maps using voice commands, making navigation more accessible and intuitive.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤖 Line Follower Robot</h3>
+        <p>Contributed to building a robot capable of detecting and following predefined paths using sensors and control algorithms.</p>
+      </div>
+
+      <div class="card">
+        <h3>📱 To-do App</h3>
+        <p>Contributed to creating a simple yet effective task management application with add, edit, and delete functionalities.</p>
+      </div>
+
+      <div class="card">
+        <h3>💡 AI Mentor Chatbot – Learning Assistant</h3>
+        <p>Contributed to designing an AI-powered chatbot to provide study support, answer queries, and guide learners interactively.</p>
+      </div>
+    </div>
+  </section>
+ <footer>
+    <p>© 2025 Lekha S — Designed with dedication.✨</p>
+  </footer>
+</body>
+</html>

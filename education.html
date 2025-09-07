@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* Page background */
+body {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #fef9c3);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.1rem 0; 
+  color: #1e3a8a;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #4f46e5);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cards Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: px;
+  max-width: 1000px;
+  margin: 1rem auto 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+  border-left: 6px solid transparent;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  border-left: 6px solid #4f46e5;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1px;
+  color: #1e3a8a;
+}
+
+.card p {
+  margin: 4px 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.card .marks {
+  margin-top: 6px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cards {
+    gap: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Lekha<span>.</span></h1>
+      <ul>
+         <li><a href="index.html" >Home</a></li>
+        <li><a href="education.html"class="active">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Education Section -->
+<section>
+  <h2>Education</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>B.E (CSE)</h3>
+      <p>🎓 Vivekananda College of Engineering & Technology, Puttur</p>
+      <p>(2023–2027)</p>
+      <p class="marks">CGPA: 9.5 (till 4th sem)</p>
+    </div>
+    <div class="card">
+      <h3>PUC (PCMB)</h3>
+      <p>📚 St. Philomena PU College, Puttur</p>
+      <p>(2021–2023)</p>
+      <p class="marks">Percentage: 96%</p>
+    </div>
+    <div class="card">
+      <h3>SSLC</h3>
+      <p>🏫 Govt. High School Irde Uppalige</p>
+      <p>(2020–2021)</p>
+      <p class="marks">Percentage: 97.12%</p>
+    </div>
+  </div>
+</section>
+
+<!-- Languages Section -->
+<section>
+  <h2>Languages Known</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Kannada</h3>
+    </div>
+    <div class="card">
+      <h3>English</h3>
+    </div>
+    <div class="card">
+      <h3>Hindi</h3>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Lekha S — Designed with dedication.✨</p>
+  </footer>
+</body>
+</html>

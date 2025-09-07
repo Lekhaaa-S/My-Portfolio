@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Workshops</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra styling specific for this page */
+
+    /* Skills Section */
+    #skills {
+      background: linear-gradient(135deg, #e0f2fe, #fce7f3);
+      border-radius: 20px;
+      margin: 2rem auto;
+      padding: 3rem 2rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    #skills h2 {
+      color: #1e3a8a;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+    }
+    #skills .card {
+      background: #fff;
+      color: #333;
+      font-weight: 500;
+      border: 1px solid #e5e7eb;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    #skills .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Workshops Section */
+    #workshops {
+      background: linear-gradient(135deg, #fce7f3, #e0f2fe);
+      border-radius: 20px;
+      margin: 2rem auto;
+      padding: 3rem 2rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    #workshops h2 {
+      color:#1e3a8a;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+    }
+    #workshops .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      gap: 20px;
+    }
+    #workshops .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+   
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">Lekha<span>.</span></h1>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html"class="active">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">☕ Java</div>
+      <div class="card">💻 HTML / CSS</div>
+      <div class="card">🐍 Python</div>
+      <div class="card">🌐 JavaScript</div>
+      <div class="card">🛢️ SQL</div>
+      <div class="card">⚡ C / C++</div>
+    </div>
+  </section>
+
+  <!-- Workshops -->
+  <section id="workshops">
+    <h2>Workshops & Competitions Attended</h2>
+    <div class="cards">
+      <div class="card">🔐 Workshop on Ethical Hacking</div>
+      <div class="card">📘 Workshop on Building AI-Powered Apps</div>
+      <div class="card">🛡️ Cyber Security HackathonX</div>
+      <div class="card">⚔️ Hackathon – Crack CTF Challenges</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lekha S — Designed with dedication.✨</p>
+  </footer>
+</body>
+</html>
